@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 5 - Array</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Gyoricano<span>Code</span></div>
+        <div class="header-right">
+            <button id="theme-toggle" class="theme-btn" title="Ganti Tema">🌙</button>
+            <button class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Navigasi Materi</h3>
+            <ul>
+                <li><a href="index.html">Beranda / Silabus</a></li>
+                <li><a href="pertemuan1.html">Pertemuan 1: Pengenalan</a></li>
+                <li><a href="pertemuan2.html">Pertemuan 2: Variable & Tipe Data</a></li>
+                <li><a href="pertemuan3.html">Pertemuan 3: Percabangan</a></li>
+                <li><a href="pertemuan4.html">Pertemuan 4: Perulangan</a></li>
+                <li><a href="pertemuan5.html" class="active">Pertemuan 5: Array</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>Pertemuan 5: Array (Larik)</h1>
+            <hr>
+            
+            <article>
+                <h3>1. Pengertian Array</h3>
+                <p>Array adalah variabel spesial yang dapat menyimpan <strong>banyak nilai</strong> dalam satu nama variabel yang sama. Setiap nilai memiliki index (dimulai dari 0).</p>
+                
+                <div class="note">
+                    <strong>Analogi:</strong><br>
+                    Jika Variabel adalah sebuah kotak sepatu, maka Array adalah sebuah lemari loker yang memiliki banyak pintu bernomor.
+                </div>
+
+                <h3>2. Deklarasi & Akses Array</h3>
+                <p>Contoh membuat array berisi 4 nama mobil:</p>
+
+                <pre><code>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+    // Membuat Array
+    string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+    
+    // Mengakses data (Index mulai dari 0)
+    cout << cars[0]; // Output: Volvo
+    cout << cars[1]; // Output: BMW
+    
+    return 0;
+}
+                </code></pre>
+
+                <h3>3. Mengubah Isi Array</h3>
+                <pre><code>
+cars[0] = "Toyota";
+cout << cars[0]; // Sekarang Outputnya: Toyota
+                </code></pre>
+            </article>
+
+            <div class="navigation-buttons">
+                <a href="pertemuan4.html" class="btn-secondary">&larr; Pertemuan 4</a>
+                <a href="index.html" class="btn">Kembali ke Menu Utama &rarr;</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UAS Web Pemrograman - Giovani (231011402987)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

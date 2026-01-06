@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 3 - Percabangan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Gyoricano<span>Code</span></div>
+        
+        <div class="header-right">
+            <button id="theme-toggle" class="theme-btn" title="Ganti Tema">
+                🌙
+            </button>
+
+            <button class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Navigasi Materi</h3>
+           <ul>
+                <li><a href="index.html">Beranda / Silabus</a></li>
+                <li><a href="pertemuan1.html">Pertemuan 1: Pengenalan</a></li>
+                <li><a href="pertemuan2.html">Pertemuan 2: Variable & Tipe Data</a></li>
+                <li><a href="pertemuan3.html">Pertemuan 3: Percabangan</a></li>
+                <li><a href="pertemuan4.html">Pertemuan 4: Perulangan</a></li>
+                <li><a href="pertemuan5.html">Pertemuan 5: Array</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>Pertemuan 3: Struktur Percabangan</h1>
+            <hr>
+            
+            <article>
+                <h3>1. Konsep Percabangan</h3>
+                <p>Percabangan memungkinkan program untuk mengambil keputusan berdasarkan kondisi tertentu. Jika kondisi terpenuhi (TRUE), program menjalankan blok kode A. Jika tidak (FALSE), program menjalankan blok kode B.</p>
+                
+                <h3>2. Struktur IF - ELSE</h3>
+                <p>Struktur paling dasar dalam pemrograman.</p>
+                
+                <div class="note">
+                    <strong>Studi Kasus:</strong><br>
+                    Menentukan kelulusan siswa. Jika nilai > 75 maka Lulus, jika tidak maka Remedial.
+                </div>
+
+                <pre><code>
+int nilai = 80;
+
+if (nilai > 75) {
+    cout << "Selamat, Anda Lulus!";
+} else {
+    cout << "Maaf, Anda harus Remedial.";
+}
+                </code></pre>
+
+                <h3>3. Struktur Switch Case</h3>
+                <p>Digunakan jika terdapat banyak pilihan kondisi yang nilainya tetap (bukan rentang).</p>
+                
+                <pre><code>
+int nomorHari = 1;
+
+switch(nomorHari) {
+  case 1:
+    cout << "Senin";
+    break;
+  case 2:
+    cout << "Selasa";
+    break;
+  default:
+    cout << "Hari tidak valid";
+}
+                </code></pre>
+            </article>
+
+            <div class="navigation-buttons">
+                <a href="pertemuan2.html" class="btn-secondary">&larr; Pertemuan 2</a>
+                <a href="index.html" class="btn">Kembali ke Menu Utama &rarr;</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UAS Web Pemrograman - Giovani (231011402987)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
